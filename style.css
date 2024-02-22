@@ -1,0 +1,121 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Header Part */
+
+header {
+    background: linear-gradient(to right, #2020cf, #2dace3); /* Blue to green gradient */
+    color:#fff;
+    text-align: center;
+    padding:10px;
+    position: fixed;
+    top:0;
+    width:100%;
+}
+
+/* Footer */
+footer {
+    background: linear-gradient(to right, #2020cf, #3da2ea); /* Blue to green gradient */
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0; 
+    width: 100%;
+}
+
+
+main {
+margin-top: 60px;
+margin-bottom: 60px;
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+}
+
+.historical-places {
+    text-align:center;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px #ccc;
+    height: auto;
+    max-width: 100%;
+    /* background-color: #f9f9f9; */
+    background-color: var(--background-color-light);
+    transition: all 0.3s;
+    padding:20px;
+    border:1px solid #ddd;
+}
+
+.historical-places img {
+    width:800px;
+    height:500px;
+    border:2px solid #333;
+    border-radius: 5px;
+    box-shadow: 3px 3px 5px #888;
+}
+
+.historical-places h1 {
+    font-size: 24px;
+    color: #333;
+    margin:10px 0;
+    text-align: center;
+    /* transition:color 0.3s; */
+    /* text-shadow: 0 0 10px #5dc7ed, 0 0 20px #5dc7ed, 0 0 30px #FFA500; */
+}
+
+
+.historical-places p {
+    margin: 10px 0;
+    font-size:16px;
+    line-height: 1.5;
+    color:#555;
+    text-align: justify;
+    /* transition:color 0.3s; */
+    /* text-shadow: 0 0 10px #7dc9ea, 0 0 20px #5dc7ed, 0 0 30px #FFA500; */
+
+
+}
+
+.historical-places h1:hover {
+    color:#486af2;
+    /* color:transparent; */
+
+}
+
+.historical-places p:hover {
+    color:#486af2;
+    /* color:transparent; */
+}
+
+.historical-places:hover {
+    /* background-color: #e5e5e5; */
+    background-color: var(--background-color-dark);
+    transform:scale(1.03);
+    transition: background-color 0.3s;
+}
+
+
+@media (max-width: 768px) {
+    .historical-places {
+        flex: 1 0 100%;
+    }
+}
+
+/* Mobile-responsive */
+
+@media (max-width: 768px) {
+    .historical-places img {
+        width: 100%;
+        max-width: 100%;
+    }
+}
+
+
+
+
+
+
+  
+  
+  
